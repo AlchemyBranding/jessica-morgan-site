@@ -144,6 +144,45 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* ── QUICK-PICK OVERVIEW ──────────────────────────────────────── */}
+      <section className="section-padding bg-surface border-b border-border">
+        <div className="container-content">
+          <div className="max-w-prose mb-10">
+            <p className="section-label">Find your fit</p>
+            <h2 className="text-subheading font-bold text-ink">Which one is right for you?</h2>
+            <p className="mt-3 text-muted text-base leading-relaxed">
+              Pick the option that matches where you are. Full details are below each card.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {services.map((service) => (
+              <Link
+                key={service.id}
+                href={`#${service.id}`}
+                className="group flex flex-col rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-shadow duration-200"
+              >
+                {/* Coloured header */}
+                <div className={`${service.bannerBg} px-6 py-5`}>
+                  {service.badge && (
+                    <span className={`inline-block text-xs font-medium tracking-widest uppercase border px-2.5 py-0.5 rounded-full mb-3 ${service.bannerBadge}`}>
+                      {service.badge}
+                    </span>
+                  )}
+                  <h3 className={`font-bold text-base leading-snug ${service.bannerText}`}>{service.title}</h3>
+                </div>
+                {/* Body */}
+                <div className="bg-background flex flex-col flex-1 px-6 py-5 gap-4">
+                  <p className="text-sm text-muted leading-relaxed flex-1">{service.tagline}</p>
+                  <span className="text-sm font-medium text-brand group-hover:underline underline-offset-4">
+                    See full details →
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── SERVICES ─────────────────────────────────────────────────── */}
       {services.map((service) => (
         <section key={service.id} id={service.id} className="border-b border-border">
