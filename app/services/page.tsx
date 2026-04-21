@@ -187,74 +187,77 @@ export default function ServicesPage() {
       {services.map((service) => (
         <section key={service.id} id={service.id} className="border-b border-border">
 
-          {/* Coloured banner */}
-          <div className={`${service.bannerBg} py-12 md:py-16`}>
+          {/* Coloured banner — title, tagline, and who it's for */}
+          <div className={`${service.bannerBg}`}>
             <div className="container-content">
-              {service.badge && (
-                <span className={`inline-block text-xs font-medium tracking-widest uppercase border px-3 py-1 rounded-full mb-4 ${service.bannerBadge}`}>
-                  {service.badge}
-                </span>
-              )}
-              <h2 className={`text-subheading font-bold ${service.bannerText} mb-3`}>{service.title}</h2>
-              <p className={`text-xl ${service.bannerMuted} max-w-xl leading-relaxed`}>{service.tagline}</p>
+
+              {/* Top: badge + title + tagline */}
+              <div className="pt-12 md:pt-16 pb-8">
+                {service.badge && (
+                  <span className={`inline-block text-xs font-medium tracking-widest uppercase border px-3 py-1 rounded-full mb-4 ${service.bannerBadge}`}>
+                    {service.badge}
+                  </span>
+                )}
+                <h2 className={`text-subheading font-bold ${service.bannerText} mb-3`}>{service.title}</h2>
+                <p className={`text-xl ${service.bannerMuted} max-w-xl leading-relaxed`}>{service.tagline}</p>
+              </div>
+
+              {/* Bottom: who it's for — visually connected to banner */}
+              <div className={`border-t border-white/15 py-6`}>
+                <p className={`text-xs font-medium tracking-widest uppercase ${service.bannerMuted} mb-2`}>Who it&apos;s for</p>
+                <p className={`text-base ${service.bannerMuted} max-w-2xl leading-relaxed`}>{service.forWho}</p>
+              </div>
+
             </div>
           </div>
 
-          {/* Content */}
+          {/* Content — includes + outcomes + CTA */}
           <div className={`${service.bodyBg} section-padding`}>
             <div className="container-content">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
 
-                {/* Left: who it's for + CTA */}
-                <div className="lg:col-span-5">
-                  <div className="lg:sticky lg:top-28">
-                    <div className="mb-6">
-                      <div className="text-xs font-medium tracking-widest uppercase text-muted mb-2">
-                        Who it&apos;s for
-                      </div>
-                      <p className="text-base text-ink leading-relaxed">{service.forWho}</p>
+                {/* Left: what's included */}
+                <div>
+                  <div className="text-xs font-medium tracking-widest uppercase text-muted mb-5">
+                    What&apos;s included
+                  </div>
+                  <ul className="flex flex-col gap-3">
+                    {service.includes.map((item, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <svg
+                          className="mt-0.5 flex-shrink-0 w-4 h-4 text-brand"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span className="text-base text-ink leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Right: what changes + CTA */}
+                <div className="flex flex-col gap-6">
+                  <div className="bg-brand/5 border border-brand/10 rounded-xl p-6">
+                    <div className="text-xs font-medium tracking-widest uppercase text-brand mb-3">
+                      What changes
                     </div>
+                    <p className="text-base text-ink leading-relaxed">{service.outcomes}</p>
+                  </div>
+                  <div>
                     <Link href="/contact" className="btn-primary">
                       Book a Discovery Call
                     </Link>
                   </div>
                 </div>
 
-                {/* Right: includes + outcomes */}
-                <div className="lg:col-span-7">
-                  <div className="mb-8">
-                    <div className="text-xs font-medium tracking-widest uppercase text-muted mb-4">
-                      What&apos;s included
-                    </div>
-                    <ul className="flex flex-col gap-3">
-                      {service.includes.map((item, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <svg
-                            className="mt-0.5 flex-shrink-0 w-4 h-4 text-brand"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span className="text-base text-ink leading-relaxed">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="bg-brand/5 border border-brand/10 rounded-lg p-6">
-                    <div className="text-xs font-medium tracking-widest uppercase text-brand mb-3">
-                      What changes
-                    </div>
-                    <p className="text-base text-ink leading-relaxed">{service.outcomes}</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
