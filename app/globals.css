@@ -1,0 +1,46 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-ink antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold;
+  }
+
+  ::selection {
+    @apply bg-brand text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-brand text-white font-semibold text-sm tracking-wider uppercase px-7 py-3.5 rounded-full transition-opacity duration-150 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center text-brand font-medium text-base underline-offset-4 hover:underline transition-all duration-150;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .container-content {
+    @apply max-w-content mx-auto px-5 md:px-8 lg:px-10;
+  }
+
+  .section-label {
+    @apply text-sm font-medium tracking-widest uppercase text-muted mb-4;
+  }
+}
