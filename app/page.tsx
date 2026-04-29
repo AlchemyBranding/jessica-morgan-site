@@ -54,7 +54,7 @@ const services = [
     description:
       'A focused, time-bound engagement to tackle a specific commercial challenge. Fast, structured, and with clear milestones from week one.',
     href: '/services#sprint',
-    headerBg: 'bg-ink',
+    headerBg: 'bg-curious-blue',
     headerText: 'text-white',
   },
   {
@@ -64,7 +64,7 @@ const services = [
       'A half or full day of focused strategic thinking. Strategy, planning, team sessions, or problem-solving, structured to make the most of the time.',
     href: '/services#advisory',
     headerBg: 'bg-mindaro',
-    headerText: 'text-ink',
+    headerText: 'text-navy',
   },
   {
     title: 'Growth Audit',
@@ -157,7 +157,7 @@ export default function HomePage() {
       </section>
 
       {/* ── PROBLEMS ─────────────────────────────────────────────────── */}
-      <section className="section-padding bg-ink border-b border-border">
+      <section className="section-padding bg-surface border-b border-border">
         <div className="container-content">
           <div className="max-w-prose mb-12">
             <p className="text-sm font-medium tracking-widest uppercase text-brand mb-4">Is this you?</p>
@@ -276,7 +276,7 @@ export default function HomePage() {
       </section>
 
       {/* ── TESTIMONIALS ─────────────────────────────────────────────── */}
-      <section className="section-padding bg-ink border-b border-border">
+      <section className="section-padding bg-surface border-b border-border">
         <div className="container-content">
           <div className="max-w-prose mb-12">
             <p className="text-sm font-medium tracking-widest uppercase text-brand mb-4">What clients say</p>
@@ -386,9 +386,9 @@ export default function HomePage() {
                 title: 'Get a clear recommendation',
                 body: 'An honest view on which engagement makes sense, or whether now isn\'t the right time.',
                 bg: 'bg-mindaro',
-                stepColor: 'text-ink/20',
-                titleColor: 'text-ink',
-                bodyColor: 'text-ink/60',
+                stepColor: 'text-navy/20',
+                titleColor: 'text-navy',
+                bodyColor: 'text-navy/60',
               },
               {
                 step: '03',
@@ -429,28 +429,28 @@ export default function HomePage() {
       </section>
 
       {/* ── FINAL CTA ────────────────────────────────────────────────── */}
-      <section className="section-padding bg-ink">
+      <section className="section-padding bg-brand">
         <div className="container-content text-center">
-          <h2 className="text-section font-bold text-white mb-5 max-w-2xl mx-auto">
+          <h2 className="text-section font-bold text-navy mb-5 max-w-2xl mx-auto">
             Not sure if this is the right fit?
             <br className="hidden sm:block" /> That&apos;s what the call is for.
           </h2>
-          <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
+          <p className="text-navy/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Book a free 30-minute discovery call. We&apos;ll talk through where your business is,
             what&apos;s holding back growth, and whether working together makes sense. No pitch,
             no pressure, just an honest conversation.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center bg-brand text-white font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-full hover:opacity-90 transition-opacity duration-150"
+            className="inline-flex items-center justify-center bg-navy text-white font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-full hover:opacity-90 transition-all duration-200 hover:-translate-y-0.5"
           >
             Book a Discovery Call
           </Link>
-          <p className="mt-4 text-white/50 text-sm">
+          <p className="mt-4 text-navy/60 text-sm">
             Or email directly:{' '}
             <a
               href="mailto:jessica@alchemybranding.studio"
-              className="underline underline-offset-4 hover:text-white/80 transition-colors"
+              className="underline underline-offset-4 hover:text-navy transition-colors"
             >
               jessica@alchemybranding.studio
             </a>

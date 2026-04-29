@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#FAF8F7',
-        surface: '#FFFFFF',
-        ink: '#191919',
-        muted: '#666666',
+        background: '#191919',
+        surface: '#242424',
+        ink: '#FAF8F7',
+        muted: '#888888',
         brand: '#FE6D4C',
         navy: '#191919',
-        border: '#E5E5E5',
+        border: '#2E2E2E',
         'pixie-pink': '#FE86F6',
         'curious-blue': '#3052F9',
         mindaro: '#C4FE79',
@@ -27,8 +27,8 @@ const config: Config = {
         serif: ['Lora', 'Georgia', 'serif'],
       },
       fontSize: {
-        'hero': ['clamp(2.25rem,5vw,3.75rem)', { lineHeight: '1.2', letterSpacing: '-0.02em' }],
-        'section': ['clamp(1.75rem,3.5vw,2.5rem)', { lineHeight: '1.2', letterSpacing: '-0.015em' }],
+        'hero': ['clamp(2.25rem,5vw,3.75rem)', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
+        'section': ['clamp(1.75rem,3.5vw,2.5rem)', { lineHeight: '1.1', letterSpacing: '-0.025em' }],
         'subheading': ['clamp(1.25rem,2vw,1.5rem)', { lineHeight: '1.2' }],
       },
       maxWidth: {

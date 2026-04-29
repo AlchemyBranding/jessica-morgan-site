@@ -32,6 +32,7 @@ const services = [
     bannerText: 'text-white',
     bannerMuted: 'text-white/70',
     bannerBadge: 'border-white/40 text-white',
+    bannerDivider: 'border-white/20',
     bodyBg: 'bg-surface',
   },
   {
@@ -50,10 +51,11 @@ const services = [
     ],
     outcomes:
       'A defined problem gets properly addressed. Your team gains clarity, momentum, and a system they can continue using after the sprint ends.',
-    bannerBg: 'bg-ink',
+    bannerBg: 'bg-curious-blue',
     bannerText: 'text-white',
     bannerMuted: 'text-white/60',
     bannerBadge: 'border-white/30 text-white',
+    bannerDivider: 'border-white/20',
     bodyBg: 'bg-background',
   },
   {
@@ -73,9 +75,10 @@ const services = [
     outcomes:
       'You get unstuck. Decisions that have been sitting get made. Your team leaves with clarity and direction.',
     bannerBg: 'bg-mindaro',
-    bannerText: 'text-ink',
-    bannerMuted: 'text-ink/60',
-    bannerBadge: 'border-ink/30 text-ink',
+    bannerText: 'text-navy',
+    bannerMuted: 'text-navy/60',
+    bannerBadge: 'border-navy/30 text-navy',
+    bannerDivider: 'border-navy/20',
     bodyBg: 'bg-surface',
   },
   {
@@ -98,6 +101,7 @@ const services = [
     bannerText: 'text-white',
     bannerMuted: 'text-white/60',
     bannerBadge: 'border-white/30 text-white',
+    bannerDivider: 'border-white/20',
     bodyBg: 'bg-background',
   },
 ]
@@ -203,7 +207,7 @@ export default function ServicesPage() {
               </div>
 
               {/* Bottom: who it's for — visually connected to banner */}
-              <div className={`border-t border-white/15 py-6`}>
+              <div className={`border-t ${service.bannerDivider} py-6`}>
                 <p className={`text-xs font-medium tracking-widest uppercase ${service.bannerMuted} mb-2`}>Who it&apos;s for</p>
                 <p className={`text-base ${service.bannerMuted} max-w-2xl leading-relaxed`}>{service.forWho}</p>
               </div>
@@ -265,22 +269,22 @@ export default function ServicesPage() {
       ))}
 
       {/* ── NOT SURE WHERE TO START ───────────────────────────────────── */}
-      <section className="section-padding bg-ink">
+      <section className="section-padding bg-brand">
         <div className="container-content text-center">
-          <h2 className="text-section font-bold text-white mb-4 max-w-xl mx-auto">
+          <h2 className="text-section font-bold text-navy mb-4 max-w-xl mx-auto">
             Not sure which is right for you?
           </h2>
-          <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
+          <p className="text-navy/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Most clients start with either a Growth Audit or a discovery conversation. Both give
             you clarity without requiring a big commitment upfront.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center bg-brand text-white font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-full hover:opacity-90 transition-opacity duration-150"
+            className="inline-flex items-center justify-center bg-navy text-white font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-full hover:opacity-90 transition-opacity duration-150"
           >
             Book a Discovery Call
           </Link>
-          <p className="mt-4 text-white/50 text-sm">Free. 30 minutes. No obligation.</p>
+          <p className="mt-4 text-navy/50 text-sm">Free. 30 minutes. No obligation.</p>
         </div>
       </section>
     </>
