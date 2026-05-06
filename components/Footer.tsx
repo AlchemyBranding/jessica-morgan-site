@@ -27,7 +27,7 @@ export default function Footer() {
                 alt="Alchemy Branding Studio"
                 width={100}
                 height={24}
-                className="opacity-70 group-hover:opacity-100 transition-opacity"
+                className="opacity-50 group-hover:opacity-80 transition-opacity invert"
               />
             </a>
           </div>
