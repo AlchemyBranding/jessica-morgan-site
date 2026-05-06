@@ -197,7 +197,7 @@ export default function ServicesPage() {
               </div>
 
               {/* Who it's for */}
-              <div className={`border-t ${service.bannerDivider} py-6`}>
+              <div className={`border-t ${service.bannerDivider} pt-6 pb-12`}>
                 <p className={`text-xs font-medium tracking-widest uppercase ${service.bannerMuted} mb-2`}>Who it&apos;s for</p>
                 <p className={`text-base ${service.bannerMuted} max-w-2xl leading-relaxed`}>{service.forWho}</p>
               </div>
