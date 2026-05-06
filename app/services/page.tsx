@@ -5,29 +5,28 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Four ways to work with Jessica Morgan: fractional growth retainer, 90-day sprint, advisory days, and growth audit. Senior commercial leadership for ambitious businesses across multiple industries.',
+    'Three ways to work with Jessica Morgan: Brand & Commercial Clarity Workshop, Brand-to-Market Deployment, and Fractional Brand & Marketing Support.',
 }
 
 const services = [
   {
-    id: 'retainer',
-    badge: 'Most popular',
-    title: 'Fractional Growth Retainer',
-    tagline: 'The ongoing commercial leadership layer your business needs.',
+    id: 'clarity',
+    badge: 'Best starting point',
+    title: 'Brand & Commercial Clarity Workshop',
+    tagline: 'Find the gaps, sharpen the message and leave with a practical plan.',
     forWho:
-      'Businesses with an existing marketing or sales team who need senior leadership to drive performance, create alignment, and build a scalable commercial function.',
+      'For founder-led businesses that know something needs to change, but are not sure where to start. This is a focused strategy session with you and your senior team to uncover what is working, what is missing and what needs fixing across your brand, message, marketing activity and commercial customer journey.',
     includes: [
-      'Dedicated time each month: structured, consistent, and accountable',
-      'Full ownership of marketing and sales strategy',
-      'Active leadership of your existing team',
-      'Pipeline and lead generation improvement',
-      'Sales and marketing alignment',
-      'CRM, reporting, and performance frameworks',
-      'Board-level commercial input if required',
-      'Regular progress reviews with clear metrics',
+      'Pre-session review of your current brand, website, content and customer touchpoints',
+      'Workshop with founders, Managing Directors or the senior leadership team',
+      'Positioning, audience and message exploration',
+      'Review of where your brand is showing up well, and where it is falling flat',
+      'Discussion around marketing gaps, team capability, tools, content and next hires',
+      'Clear written summary with recommended priorities and next steps',
     ],
     outcomes:
-      'You stop operating without senior commercial direction. Your team has leadership. Your pipeline becomes more predictable. Marketing and sales stop operating as separate units. Growth becomes something you manage, not something that just happens.',
+      'You leave with a sharper view of what your business needs next. Not a fluffy brand chat. A practical commercial direction you can act on in-house, with your existing partners, or with support from me and Alchemy.',
+    cta: 'Book a clarity workshop',
     bannerBg: 'bg-brand',
     bannerText: 'text-white',
     bannerMuted: 'text-white/70',
@@ -36,21 +35,23 @@ const services = [
     bodyBg: 'bg-surface',
   },
   {
-    id: 'sprint',
+    id: 'deployment',
     badge: null,
-    title: '90-Day Growth Sprint',
-    tagline: 'A focused intervention when you need faster results.',
+    title: 'Brand-to-Market Deployment',
+    tagline: 'Turn the strategy into words, content and customer-facing activity.',
     forWho:
-      'Businesses with a specific commercial challenge: a pipeline problem, a conversion gap, a launch, a market entry. If you need a structured, time-bound engagement to tackle it properly, this is it.',
+      'For businesses that have done the brand work, or know they need clearer messaging, but have not yet turned it into useful content, website copy, campaigns or internal guidance. This is ideal after a rebrand, repositioning project, strategy workshop or launch of a new offer.',
     includes: [
-      'Discovery and diagnosis in week one',
-      'A clear 90-day plan with defined milestones',
-      'Hands-on involvement in execution throughout',
-      'Weekly check-ins and progress tracking',
-      'End-of-sprint review with a clear handover plan',
+      'Review of your brand strategy, guidelines and current messaging',
+      'Website copy direction and key page structure',
+      'Content pillars and campaign themes',
+      'Practical messaging for LinkedIn, email, proposals and sales conversations',
+      'Internal guidance so your team knows how to use the brand day to day',
+      'Optional content and creative delivery through Alchemy Branding Studio',
     ],
     outcomes:
-      'A defined problem gets properly addressed. Your team gains clarity, momentum, and a system they can continue using after the sprint ends.',
+      'Your brand stops sitting in a document and starts showing up properly across your website, content, sales materials and customer journey.',
+    cta: 'Talk about deployment support',
     bannerBg: 'bg-curious-blue',
     bannerText: 'text-white',
     bannerMuted: 'text-white/60',
@@ -59,50 +60,31 @@ const services = [
     bodyBg: 'bg-background',
   },
   {
-    id: 'advisory',
+    id: 'fractional',
     badge: null,
-    title: 'Advisory Days',
-    tagline: 'Senior thinking when you need it, without ongoing commitment.',
+    title: 'Fractional Brand & Marketing Support',
+    tagline: 'Regular senior support without hiring full-time too soon.',
     forWho:
-      'Founders, MDs, or leadership teams who need focused senior input on a specific problem: strategy, planning, team development, a decision they\'re stuck on, or a workshop for their commercial team.',
+      'For growing businesses that need senior brand and marketing direction, but are not ready for a full-time hire. This usually works best at around one day a week, with the option to increase support for heavier projects and reduce it as the right people and processes are put in place.',
     includes: [
-      'Half-day or full-day sessions, in-person or remote',
-      'Pre-session briefing to ensure time is used well',
-      'Structured agenda co-created with you',
-      'Clear outputs and next steps from every session',
-      'Follow-up summary delivered within 48 hours',
+      'Regular senior brand and marketing support',
+      'Founder or MD sounding-board sessions',
+      'Marketing planning and prioritisation',
+      'Support for current marketing staff or external suppliers',
+      'Content, campaign and website direction',
+      'Guidance on first or next marketing hires',
+      'Review of tools, systems, AI use and proposal processes',
+      'Clear monthly priorities and progress check-ins',
     ],
     outcomes:
-      'You get unstuck. Decisions that have been sitting get made. Your team leaves with clarity and direction.',
+      'You get more structure, better decisions and a clearer path towards building the right internal function. The aim is not to make you dependent on me. It is to help you build the right foundations, people and process so, eventually, you do not need me in the same way.',
+    cta: 'Discuss fractional support',
     bannerBg: 'bg-mindaro',
     bannerText: 'text-navy',
     bannerMuted: 'text-navy/60',
     bannerBadge: 'border-navy/30 text-navy',
     bannerDivider: 'border-navy/20',
     bodyBg: 'bg-surface',
-  },
-  {
-    id: 'audit',
-    badge: 'Good starting point',
-    title: 'Growth Audit',
-    tagline: 'Start with clarity. Know exactly what to fix and in what order.',
-    forWho:
-      'Businesses that suspect something is off in their marketing or sales function but aren\'t sure exactly what. A sensible starting point before committing to a longer engagement.',
-    includes: [
-      'Structured review of your marketing and sales function',
-      'Lead generation and pipeline analysis',
-      'Conversion and CRM review',
-      'Team and process assessment',
-      'Clear written output: what\'s working, what isn\'t, and a prioritised action plan',
-    ],
-    outcomes:
-      'You stop guessing. You get a clear picture of where the gaps are, what matters most, and what to do next. Many clients use the audit to define the scope of a retainer or sprint.',
-    bannerBg: 'bg-space-green',
-    bannerText: 'text-white',
-    bannerMuted: 'text-white/60',
-    bannerBadge: 'border-white/30 text-white',
-    bannerDivider: 'border-white/20',
-    bodyBg: 'bg-background',
   },
 ]
 
@@ -116,11 +98,19 @@ export default function ServicesPage() {
             <div>
               <p className="section-label">Working together</p>
               <h1 className="text-section font-bold text-ink mb-5">
-                Ways to work with me
+                Support for the messy middle of brand, marketing and commercial growth.
               </h1>
-              <p className="text-lg text-muted leading-relaxed mb-6">
-                Every business is at a different stage with different pressures. Here are the four
-                ways clients engage, from a one-off audit to ongoing fractional leadership.
+              <p className="text-lg text-muted leading-relaxed mb-4">
+                Most businesses I work with are not starting from scratch. They have ambition,
+                ideas, maybe a small team, maybe a new brand, maybe no marketing function at all.
+              </p>
+              <p className="text-lg text-muted leading-relaxed mb-4">
+                What they are missing is structure.
+              </p>
+              <p className="text-base text-muted leading-relaxed mb-6">
+                I help founders and Managing Directors work out what is needed, what is missing and
+                what to do next, then support the work through consultancy, fractional input or
+                agency-backed delivery.
               </p>
               <p className="text-base text-muted">
                 Not sure where to start?{' '}
@@ -128,9 +118,8 @@ export default function ServicesPage() {
                   href="/contact"
                   className="text-brand font-medium hover:underline underline-offset-4"
                 >
-                  Book a discovery call →
-                </Link>{' '}
-                and we&apos;ll figure it out together.
+                  That is usually what the first conversation is for →
+                </Link>
               </p>
             </div>
             <div>
@@ -153,12 +142,13 @@ export default function ServicesPage() {
         <div className="container-content">
           <div className="max-w-prose mb-10">
             <p className="section-label">Find your fit</p>
-            <h2 className="text-subheading font-bold text-ink">Which one is right for you?</h2>
+            <h2 className="text-section font-bold text-ink">Where do you need support?</h2>
             <p className="mt-3 text-muted text-base leading-relaxed">
-              Pick the option that matches where you are. Full details are below each card.
+              Start with the option that sounds closest to where you are now. We can shape the
+              right scope from there.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {services.map((service) => (
               <Link
                 key={service.id}
@@ -178,7 +168,7 @@ export default function ServicesPage() {
                 <div className="bg-background flex flex-col flex-1 px-6 py-5 gap-4">
                   <p className="text-sm text-muted leading-relaxed flex-1">{service.tagline}</p>
                   <span className="text-sm font-medium text-brand group-hover:underline underline-offset-4">
-                    See full details →
+                    See what is included →
                   </span>
                 </div>
               </Link>
@@ -191,7 +181,7 @@ export default function ServicesPage() {
       {services.map((service) => (
         <section key={service.id} id={service.id} className="border-b border-border">
 
-          {/* Coloured banner — title, tagline, and who it's for */}
+          {/* Coloured banner */}
           <div className={`${service.bannerBg}`}>
             <div className="container-content">
 
@@ -202,11 +192,11 @@ export default function ServicesPage() {
                     {service.badge}
                   </span>
                 )}
-                <h2 className={`text-subheading font-bold ${service.bannerText} mb-3`}>{service.title}</h2>
+                <h2 className={`text-section font-bold ${service.bannerText} mb-3`}>{service.title}</h2>
                 <p className={`text-xl ${service.bannerMuted} max-w-xl leading-relaxed`}>{service.tagline}</p>
               </div>
 
-              {/* Bottom: who it's for — visually connected to banner */}
+              {/* Who it's for */}
               <div className={`border-t ${service.bannerDivider} py-6`}>
                 <p className={`text-xs font-medium tracking-widest uppercase ${service.bannerMuted} mb-2`}>Who it&apos;s for</p>
                 <p className={`text-base ${service.bannerMuted} max-w-2xl leading-relaxed`}>{service.forWho}</p>
@@ -257,7 +247,7 @@ export default function ServicesPage() {
                   </div>
                   <div>
                     <Link href="/contact" className="btn-primary">
-                      Book a Discovery Call
+                      {service.cta}
                     </Link>
                   </div>
                 </div>
@@ -275,14 +265,15 @@ export default function ServicesPage() {
             Not sure which is right for you?
           </h2>
           <p className="text-navy/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Most clients start with either a Growth Audit or a discovery conversation. Both give
-            you clarity without requiring a big commitment upfront.
+            Most clients start with either a Brand &amp; Commercial Clarity Workshop or a clarity
+            conversation. Both give you a clearer view of what you need before you commit to a
+            bigger piece of work.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center justify-center bg-navy text-white font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-full hover:opacity-90 transition-opacity duration-150"
           >
-            Book a Discovery Call
+            Book a Clarity Call
           </Link>
           <p className="mt-4 text-navy/50 text-sm">Free. 30 minutes. No obligation.</p>
         </div>

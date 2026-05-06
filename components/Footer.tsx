@@ -10,9 +10,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-xs">
             <div className="font-semibold text-ink text-base mb-1">Jessica Morgan</div>
-            <div className="text-sm text-muted mb-3">Fractional CMO &amp; Sales Leadership</div>
+            <div className="text-sm text-muted mb-3">Commercial Brand &amp; Marketing Consultant</div>
             <p className="text-sm text-muted leading-relaxed mb-4">
-              Senior commercial leadership for ambitious businesses across multiple industries.
+              Brand, marketing and commercial clarity for founder-led businesses.
             </p>
             <a
               href="https://alchemybranding.studio"
@@ -37,18 +37,33 @@ export default function Footer() {
             <div className="text-xs font-medium tracking-widest uppercase text-muted mb-4">Navigation</div>
             <nav className="flex flex-col gap-2.5">
               {[
-                { label: 'Home', href: '/' },
-                { label: 'Services', href: '/services' },
-                { label: 'Contact', href: '/contact' },
-              ].map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-muted hover:text-ink transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+                { label: 'Home', href: '/', external: false },
+                { label: 'Services', href: '/services', external: false },
+                { label: 'About', href: '/about', external: false },
+                { label: 'Contact', href: '/contact', external: false },
+                { label: 'Brand to Scale', href: 'https://brandtoscale.com', external: true },
+                { label: 'Alchemy', href: 'https://alchemybranding.studio', external: true },
+              ].map((link) =>
+                link.external ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted hover:text-ink transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-sm text-muted hover:text-ink transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                )
+              )}
             </nav>
           </div>
 
@@ -57,7 +72,7 @@ export default function Footer() {
             <div className="text-xs font-medium tracking-widest uppercase text-muted mb-4">Get in Touch</div>
             <div className="flex flex-col gap-2.5">
               <Link href="/contact" className="text-sm text-muted hover:text-ink transition-colors">
-                Book a Discovery Call
+                Book a Clarity Call
               </Link>
               <a
                 href="mailto:jessica@alchemybranding.studio"

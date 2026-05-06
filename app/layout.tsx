@@ -6,35 +6,35 @@ import ScrollAnimations from '@/components/ScrollAnimations'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Jessica Morgan | Fractional CMO & Sales Leadership',
+    default: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
     template: '%s | Jessica Morgan',
   },
   description:
-    'Senior marketing and sales leadership for ambitious, growing businesses across multiple industries. Fractional CMO and commercial leadership, hands-on, accountable, results-driven.',
+    'Commercial brand and marketing consultancy for founder-led businesses that need clarity, structure and senior support before hiring full-time.',
   keywords: [
-    'fractional CMO',
+    'commercial brand consultant',
+    'marketing consultant UK',
     'fractional marketing director',
-    'sales leadership',
-    'B2B marketing',
-    'SaaS marketing',
-    'tech marketing',
-    'fractional chief marketing officer UK',
-    'marketing strategy',
+    'brand strategy',
+    'founder-led business',
+    'brand and marketing clarity',
+    'fractional brand support',
+    'marketing foundations',
   ],
   authors: [{ name: 'Jessica Morgan' }],
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    siteName: 'Jessica Morgan | Fractional CMO & Sales Leadership',
-    title: 'Jessica Morgan | Fractional CMO & Sales Leadership',
+    siteName: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
+    title: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
     description:
-      'Senior marketing and sales leadership for ambitious, growing businesses. Hands-on, commercial, accountable.',
+      'Commercial brand and marketing consultancy for founder-led businesses. Clarity, structure and senior support.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jessica Morgan | Fractional CMO & Sales Leadership',
+    title: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
     description:
-      'Senior marketing and sales leadership for ambitious, growing businesses. Hands-on, commercial, accountable.',
+      'Commercial brand and marketing consultancy for founder-led businesses. Clarity, structure and senior support.',
   },
   robots: {
     index: true,

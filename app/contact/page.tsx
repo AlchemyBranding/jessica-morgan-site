@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Book a free discovery call with Jessica Morgan. Fractional CMO and sales leadership for ambitious, growing businesses.',
+    'Book a free clarity call with Jessica Morgan. Commercial brand and marketing consultancy for founder-led businesses.',
 }
 
 export default function ContactPage() {
@@ -48,7 +48,7 @@ export default function ContactPage() {
               <div className="mb-10">
                 <p className="section-label">Quickest route</p>
                 <h2 className="text-subheading font-bold text-ink mb-4">
-                  Book a discovery call
+                  Book a clarity call
                 </h2>
                 <p className="text-muted text-base leading-relaxed mb-6">
                   The quickest way to get started is a free 30-minute call. No pitch, no
@@ -56,10 +56,10 @@ export default function ContactPage() {
                   business is and whether working together makes sense.
                 </p>
                 <a
-                  href="mailto:jessica@alchemybranding.studio?subject=Discovery%20Call%20Request"
+                  href="mailto:jessica@alchemybranding.studio?subject=Clarity%20Call%20Request"
                   className="btn-primary"
                 >
-                  Book a Discovery Call
+                  Book a Clarity Call
                 </a>
                 <p className="mt-3 text-xs text-muted">Free. 30 minutes. No obligation.</p>
               </div>

@@ -4,9 +4,12 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
 const links = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Home', href: '/', external: false },
+  { label: 'Services', href: '/services', external: false },
+  { label: 'About', href: '/about', external: false },
+  { label: 'Brand to Scale', href: 'https://brandtoscale.com', external: true },
+  { label: 'Alchemy', href: 'https://alchemybranding.studio', external: true },
+  { label: 'Contact', href: '/contact', external: false },
 ]
 
 export default function Nav() {
@@ -27,22 +30,34 @@ export default function Nav() {
           {/* Logo */}
           <Link href="/" className="flex flex-col leading-tight group">
             <span className="font-semibold text-ink text-base tracking-tight">Jessica Morgan</span>
-            <span className="text-xs text-muted font-normal tracking-wide">Fractional CMO & Sales Leadership</span>
+            <span className="text-xs text-muted font-normal tracking-wide">Commercial Brand &amp; Marketing Consultant</span>
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-muted hover:text-ink transition-colors duration-150"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <nav className="hidden md:flex items-center gap-5">
+            {links.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-muted hover:text-ink transition-colors duration-150"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-muted hover:text-ink transition-colors duration-150"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <Link href="/contact" className="btn-primary text-sm px-5 py-2.5">
-              Book a Call
+              Book a Clarity Call
             </Link>
           </nav>
 
@@ -67,22 +82,35 @@ export default function Nav() {
         {/* Mobile menu */}
         {open && (
           <div className="md:hidden border-t border-border py-4 flex flex-col gap-4">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="text-base font-medium text-ink py-1"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {links.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium text-ink py-1"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium text-ink py-1"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
               className="btn-primary text-sm w-full text-center mt-2"
             >
-              Book a Call
+              Book a Clarity Call
             </Link>
           </div>
         )}
