@@ -165,7 +165,7 @@ export default function ServicesPage() {
                   <h3 className={`font-bold text-base leading-snug ${service.bannerText}`}>{service.title}</h3>
                 </div>
                 {/* Body */}
-                <div className="bg-background flex flex-col flex-1 px-6 py-5 gap-4">
+                <div className="bg-background flex flex-col flex-1 px-6 pt-5 pb-8 gap-4">
                   <p className="text-sm text-muted leading-relaxed flex-1">{service.tagline}</p>
                   <span className="text-sm font-medium text-brand group-hover:underline underline-offset-4">
                     See what is included →
