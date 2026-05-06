@@ -41,7 +41,7 @@ export default function Footer() {
                 { label: 'Services', href: '/services', external: false },
                 { label: 'About', href: '/about', external: false },
                 { label: 'Contact', href: '/contact', external: false },
-                { label: 'Brand to Scale', href: 'https://brandtoscale.com', external: true },
+                { label: 'Brand to Scale', href: 'https://www.brandtoscale.co.uk', external: true },
                 { label: 'Alchemy', href: 'https://alchemybranding.studio', external: true },
               ].map((link) =>
                 link.external ? (

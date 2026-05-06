@@ -418,7 +418,7 @@ export default function HomePage() {
                 mutedColor: 'text-navy/60',
                 title: 'Brand to Scale',
                 body: 'The podcast and content platform where I talk about the honest, useful and sometimes messy side of building brands, teams and businesses.',
-                href: 'https://brandtoscale.com',
+                href: 'https://www.brandtoscale.co.uk',
                 cta: 'Listen to Brand to Scale',
               },
             ].map((card) => (
