@@ -132,24 +132,27 @@ export default function HomePage() {
         <div className="container-content">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-stretch">
             <div>
-              {/* Mobile: small portrait image floated right, hidden on desktop */}
-              <div className="float-right ml-5 mb-3 w-32 sm:w-40 rounded-xl overflow-hidden lg:hidden">
-                <div className="relative aspect-[3/4]">
-                  <Image
-                    src="/hero.jpg"
-                    alt="Jessica Morgan, Commercial Brand & Marketing Consultant"
-                    fill
-                    className="object-cover"
-                    priority
-                    sizes="160px"
-                  />
+              <p className="section-label">Commercial Brand &amp; Marketing Consultancy</p>
+              {/* On mobile: inner grid puts h1 and image side-by-side at equal height.
+                  On desktop: display:contents dissolves the wrapper so h1 flows normally. */}
+              <div className="grid grid-cols-[1fr_auto] items-stretch gap-4 mb-6 lg:contents">
+                <h1 className="text-hero font-bold text-ink lg:mb-6">
+                  Brand and marketing clarity for{' '}
+                  <span className="text-brand">founder-led businesses.</span>
+                </h1>
+                <div className="w-28 sm:w-36 flex lg:hidden">
+                  <div className="relative rounded-xl overflow-hidden flex-1">
+                    <Image
+                      src="/hero.jpg"
+                      alt="Jessica Morgan, Commercial Brand & Marketing Consultant"
+                      fill
+                      className="object-cover"
+                      priority
+                      sizes="160px"
+                    />
+                  </div>
                 </div>
               </div>
-              <p className="section-label">Commercial Brand &amp; Marketing Consultancy</p>
-              <h1 className="text-hero font-bold text-ink mb-6">
-                Brand and marketing clarity for{' '}
-                <span className="text-brand">founder-led businesses.</span>
-              </h1>
               <p className="text-lg md:text-xl text-muted leading-relaxed mb-6 max-w-2xl">
                 You might have a new brand you are not sure how to use, a small team that needs
                 direction, no marketing function at all, or a website that no longer reflects the
