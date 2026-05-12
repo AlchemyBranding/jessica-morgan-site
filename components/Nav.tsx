@@ -31,9 +31,9 @@ export default function Nav() {
             <Image
               src="/Favicon.png"
               alt="Jessica Morgan"
-              width={36}
-              height={36}
-              className="rounded-lg flex-shrink-0"
+              width={1768}
+              height={2912}
+              className="h-8 w-auto flex-shrink-0"
             />
             <div className="flex flex-col leading-tight">
               <span className="font-semibold text-ink text-base tracking-tight">Jessica Morgan</span>
