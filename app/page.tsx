@@ -132,6 +132,19 @@ export default function HomePage() {
         <div className="container-content">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-stretch">
             <div>
+              {/* Mobile: small portrait image floated right, hidden on desktop */}
+              <div className="float-right ml-5 mb-3 w-32 sm:w-40 rounded-xl overflow-hidden lg:hidden">
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/hero.jpg"
+                    alt="Jessica Morgan, Commercial Brand & Marketing Consultant"
+                    fill
+                    className="object-cover"
+                    priority
+                    sizes="160px"
+                  />
+                </div>
+              </div>
               <p className="section-label">Commercial Brand &amp; Marketing Consultancy</p>
               <h1 className="text-hero font-bold text-ink mb-6">
                 Brand and marketing clarity for{' '}
@@ -157,15 +170,16 @@ export default function HomePage() {
               </div>
               <p className="mt-4 text-xs text-muted">Free 30-minute call. No pressure, no awkward pitch.</p>
             </div>
-            <div className="block lg:flex">
-              <div className="relative rounded-xl overflow-hidden w-full aspect-[3/2] lg:aspect-auto lg:min-h-full">
+            {/* Desktop: full-height image column */}
+            <div className="hidden lg:flex">
+              <div className="relative rounded-xl overflow-hidden w-full min-h-full">
                 <Image
                   src="/hero.jpg"
                   alt="Jessica Morgan, Commercial Brand & Marketing Consultant"
                   fill
                   className="object-cover"
                   priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="50vw"
                 />
               </div>
             </div>
