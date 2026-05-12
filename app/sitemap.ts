@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://jessicamorgan.co.uk' // update with final domain
+  const baseUrl = 'https://www.jessicamorganconsulting.co.uk'
 
   return [
     {
@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
-      priority: 0.6,
+      priority: 0.7,
     },
   ]
 }

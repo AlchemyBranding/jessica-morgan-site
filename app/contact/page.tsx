@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Contact',
   description:
     'Book a free clarity call with Jessica Morgan. Commercial brand and marketing consultancy for founder-led businesses.',
+  alternates: {
+    canonical: '/contact',
+  },
 }
 
 export default function ContactPage() {

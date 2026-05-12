@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Services',
   description:
     'Three ways to work with Jessica Morgan: Brand & Commercial Clarity Workshop, Brand-to-Market Deployment, and Fractional Brand & Marketing Support.',
+  alternates: {
+    canonical: '/services',
+  },
 }
 
 const services = [

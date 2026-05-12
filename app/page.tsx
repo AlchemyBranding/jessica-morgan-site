@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
   description:
     'Commercial brand and marketing consultancy for founder-led businesses that need clarity, structure and senior support before hiring full-time.',
+  alternates: {
+    canonical: '/',
+  },
 }
 
 const problems = [
