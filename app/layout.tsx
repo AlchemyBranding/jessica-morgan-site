@@ -54,6 +54,9 @@ export const metadata: Metadata = {
       'Commercial brand and marketing consultancy for founder-led businesses. Clarity, structure and senior support.',
     images: ['/hero.jpg'],
   },
+  verification: {
+    google: 'UHdxRJXvn03PxGysfhgVuoDs8RzjZLElq4Bk1OKx3Rw',
+  },
   icons: {
     icon: '/Favicon.png',
     apple: '/Favicon.png',
