@@ -4,6 +4,7 @@ import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import ScrollAnimations from '@/components/ScrollAnimations'
+import CookieConsent from '@/components/CookieConsent'
 
 const siteUrl = 'https://www.jessicamorganconsulting.co.uk'
 
@@ -108,19 +109,6 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body className="flex flex-col min-h-screen">
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-2CE4X1B4L1"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-2CE4X1B4L1');
-          `}
-        </Script>
         <Script
           id="json-ld"
           type="application/ld+json"
@@ -130,6 +118,7 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   )
