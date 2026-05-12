@@ -36,6 +36,10 @@ export const metadata: Metadata = {
     description:
       'Commercial brand and marketing consultancy for founder-led businesses. Clarity, structure and senior support.',
   },
+  icons: {
+    icon: '/Favicon.png',
+    apple: '/Favicon.png',
+  },
   robots: {
     index: true,
     follow: true,

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 const links = [
@@ -26,9 +27,18 @@ export default function Nav() {
         <div className="flex items-center justify-between h-16 md:h-18">
 
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-tight group">
-            <span className="font-semibold text-ink text-base tracking-tight">Jessica Morgan</span>
-            <span className="text-xs text-muted font-normal tracking-wide">Commercial Brand &amp; Marketing Consultant</span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <Image
+              src="/Favicon.png"
+              alt="Jessica Morgan"
+              width={36}
+              height={36}
+              className="rounded-lg flex-shrink-0"
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="font-semibold text-ink text-base tracking-tight">Jessica Morgan</span>
+              <span className="text-xs text-muted font-normal tracking-wide">Commercial Brand &amp; Marketing Consultant</span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
