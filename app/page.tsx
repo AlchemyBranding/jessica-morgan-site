@@ -157,15 +157,15 @@ export default function HomePage() {
               </div>
               <p className="mt-4 text-xs text-muted">Free 30-minute call. No pressure, no awkward pitch.</p>
             </div>
-            <div className="hidden lg:flex">
-              <div className="relative rounded-xl overflow-hidden w-full min-h-full">
+            <div className="block lg:flex">
+              <div className="relative rounded-xl overflow-hidden w-full aspect-[3/2] lg:aspect-auto lg:min-h-full">
                 <Image
                   src="/hero.jpg"
                   alt="Jessica Morgan, Commercial Brand & Marketing Consultant"
                   fill
                   className="object-cover"
                   priority
-                  sizes="50vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>
