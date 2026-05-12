@@ -140,7 +140,7 @@ export default function HomePage() {
                   Brand and marketing clarity for{' '}
                   <span className="text-brand">founder-led businesses.</span>
                 </h1>
-                <div className="w-28 sm:w-36 flex lg:hidden">
+                <div className="w-40 sm:w-52 flex lg:hidden">
                   <div className="relative rounded-xl overflow-hidden flex-1">
                     <Image
                       src="/hero.jpg"
