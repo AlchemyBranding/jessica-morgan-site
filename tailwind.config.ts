@@ -23,8 +23,8 @@ const config: Config = {
         'ultra-violet': '#9A4EFF',
       },
       fontFamily: {
-        sans: ['Satoshi', 'system-ui', 'sans-serif'],
-        serif: ['Lora', 'Georgia', 'serif'],
+        sans: ['var(--font-satoshi)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-lora)', 'Georgia', 'serif'],
       },
       fontSize: {
         'hero': ['clamp(2.25rem,5vw,3.75rem)', { lineHeight: '1.1', letterSpacing: '-0.03em' }],

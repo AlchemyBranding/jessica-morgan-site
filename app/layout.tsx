@@ -1,10 +1,32 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import localFont from 'next/font/local'
+import { Lora } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import ScrollAnimations from '@/components/ScrollAnimations'
 import CookieConsent from '@/components/CookieConsent'
+
+const satoshi = localFont({
+  src: [
+    { path: './fonts/satoshi-300.woff2', weight: '300', style: 'normal' },
+    { path: './fonts/satoshi-400.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/satoshi-500.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/satoshi-700.woff2', weight: '700', style: 'normal' },
+    { path: './fonts/satoshi-900.woff2', weight: '900', style: 'normal' },
+  ],
+  variable: '--font-satoshi',
+  display: 'swap',
+})
+
+const lora = Lora({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  style: ['normal', 'italic'],
+  variable: '--font-lora',
+  display: 'swap',
+})
 
 const siteUrl = 'https://www.jessicamorganconsulting.co.uk'
 
@@ -110,7 +132,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className={`${satoshi.variable} ${lora.variable}`}>
       <body className="flex flex-col min-h-screen">
         <Script
           id="json-ld"
