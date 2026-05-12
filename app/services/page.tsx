@@ -128,7 +128,7 @@ export default function ServicesPage() {
             <div>
               <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
                 <Image
-                  src="/services-header.png"
+                  src="/services-header.jpg"
                   alt="Ways to work with Jessica Morgan"
                   fill
                   className="object-cover"

@@ -28,7 +28,7 @@ export default function ContactPage() {
             <div>
               <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
                 <Image
-                  src="/contact-header.png"
+                  src="/contact-header.jpg"
                   alt="Get in touch with Jessica Morgan"
                   fill
                   className="object-cover"
