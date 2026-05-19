@@ -42,8 +42,8 @@ export default function Footer() {
                 <Image
                   src="/IOD.png"
                   alt="Institute of Directors"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="opacity-60 group-hover:opacity-90 transition-opacity"
                 />
               </a>
