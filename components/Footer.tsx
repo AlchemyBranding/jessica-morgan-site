@@ -30,6 +30,22 @@ export default function Footer() {
                 className="opacity-50 group-hover:opacity-80 transition-opacity invert"
               />
             </a>
+            <a
+              href="https://www.iod.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 group mt-4"
+              aria-label="Institute of Directors"
+            >
+              <span className="text-xs text-muted group-hover:text-ink transition-colors">Member of</span>
+              <Image
+                src="/IOD.png"
+                alt="Institute of Directors"
+                width={40}
+                height={40}
+                className="opacity-60 group-hover:opacity-90 transition-opacity"
+              />
+            </a>
           </div>
 
           {/* Navigation */}
