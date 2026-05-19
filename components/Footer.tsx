@@ -14,38 +14,40 @@ export default function Footer() {
             <p className="text-sm text-muted leading-relaxed mb-4">
               Brand, marketing and commercial clarity for founder-led businesses.
             </p>
-            <a
-              href="https://alchemybranding.studio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 group"
-              aria-label="Alchemy Branding Studio"
-            >
-              <span className="text-xs text-muted group-hover:text-ink transition-colors">Part of</span>
-              <Image
-                src="/alchemy__master_dusk.png"
-                alt="Alchemy Branding Studio"
-                width={100}
-                height={24}
-                className="opacity-50 group-hover:opacity-80 transition-opacity invert"
-              />
-            </a>
-            <a
-              href="https://www.iod.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 group mt-4"
-              aria-label="Institute of Directors"
-            >
-              <span className="text-xs text-muted group-hover:text-ink transition-colors">Member of</span>
-              <Image
-                src="/IOD.png"
-                alt="Institute of Directors"
-                width={40}
-                height={40}
-                className="opacity-60 group-hover:opacity-90 transition-opacity"
-              />
-            </a>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://alchemybranding.studio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 group"
+                aria-label="Alchemy Branding Studio"
+              >
+                <span className="text-xs text-muted group-hover:text-ink transition-colors">Part of</span>
+                <Image
+                  src="/alchemy__master_dusk.png"
+                  alt="Alchemy Branding Studio"
+                  width={100}
+                  height={24}
+                  className="opacity-50 group-hover:opacity-80 transition-opacity invert"
+                />
+              </a>
+              <a
+                href="https://www.iod.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 group"
+                aria-label="Institute of Directors"
+              >
+                <span className="text-xs text-muted group-hover:text-ink transition-colors">Member of</span>
+                <Image
+                  src="/IOD.png"
+                  alt="Institute of Directors"
+                  width={40}
+                  height={40}
+                  className="opacity-60 group-hover:opacity-90 transition-opacity"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Navigation */}
