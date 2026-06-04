@@ -31,7 +31,7 @@ export default function ContactPage() {
                   src="/contact-header.jpg"
                   alt="Get in touch with Jessica Morgan"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-[center_65%]"
                   sizes="(max-width: 1024px) 90vw, 50vw"
                 />
               </div>
