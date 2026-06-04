@@ -146,7 +146,7 @@ export default function HomePage() {
                       src="/hero.jpg"
                       alt="Jessica Morgan, Commercial Brand & Marketing Consultant"
                       fill
-                      className="object-cover"
+                      className="object-cover object-top scale-125"
                       priority
                       sizes="160px"
                     />
@@ -180,7 +180,7 @@ export default function HomePage() {
                   src="/hero.jpg"
                   alt="Jessica Morgan, Commercial Brand & Marketing Consultant"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top scale-125"
                   priority
                   sizes="50vw"
                 />
