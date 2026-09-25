@@ -94,6 +94,32 @@ export default function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="heardAbout" className="block text-sm font-medium text-ink mb-1.5">
+          Where did you hear about me? <span className="text-muted">*</span>
+        </label>
+        {/* Required so every enquiry arrives with a source. Keep in step with the
+            Alchemy site's list (alchemy-branding-studio ContactForm.tsx). */}
+        <select
+          id="heardAbout"
+          name="heardAbout"
+          required
+          defaultValue=""
+          className="w-full px-4 py-3 rounded-md border border-border bg-background text-ink text-base focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition"
+        >
+          <option value="" disabled>Choose one</option>
+          <option>LinkedIn</option>
+          <option>Instagram</option>
+          <option>TikTok</option>
+          <option>Brand to Scale podcast</option>
+          <option>Google search</option>
+          <option>Alchemy Branding Studio</option>
+          <option>Referral or word of mouth</option>
+          <option>Event or talk</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div>
         <label htmlFor="message" className="block text-sm font-medium text-ink mb-1.5">
           What&apos;s on your mind? <span className="text-muted">*</span>
         </label>
