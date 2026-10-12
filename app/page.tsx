@@ -67,8 +67,8 @@ export default function HomePage() {
                   On desktop: display:contents dissolves the wrapper so h1 flows normally. */}
               <div className="grid grid-cols-[1fr_auto] items-stretch gap-4 mb-6 lg:contents">
                 <h1 className="text-hero font-bold text-ink lg:mb-6">
-                  Growth stalls without foundations.{' '}
-                  <span className="text-brand">I build them with you, and stay as you grow.</span>
+                  Growth stalls without foundations.
+                  <span className="block text-brand">I build them with you, and stay as you grow.</span>
                 </h1>
                 <div className="w-40 sm:w-52 flex lg:hidden">
                   <div className="relative rounded-xl overflow-hidden flex-1">
@@ -335,10 +335,10 @@ export default function HomePage() {
                 quote: 'Jess demonstrated a deep understanding of our vision and values from the outset. Thanks to her hard work and dedication, Valleys Vodka has a strong and memorable brand presence that sets us apart in the market.',
               },
               {
-                label: 'Google review',
+                label: 'Brand strategy and go-to-market launch',
                 name: 'Ashley Williams',
-                title: '',
-                img: '',
+                title: 'Aqualogic',
+                img: '/testimonial-ashley.jpg',
                 linkedin: '',
                 quote: 'Jess has been fantastic in providing marketing & comms direction and delivery. From the off, she got to know the business, worked with existing stakeholders and carefully got to work delivering a transformation in our brand. Look forward to what comes next as the journey is only just beginning...',
               },
@@ -368,7 +368,15 @@ export default function HomePage() {
                     </div>
                   </a>
                 ) : (
-                  <div className="text-ink font-semibold text-sm">{t.name}</div>
+                  <div className="flex items-center gap-4">
+                    <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-white/10">
+                      <Image src={t.img} alt={t.name} fill className="object-cover" sizes="48px" />
+                    </div>
+                    <div>
+                      <div className="text-ink font-semibold text-sm">{t.name}</div>
+                      {t.title ? <div className="text-muted text-xs">{t.title}</div> : null}
+                    </div>
+                  </div>
                 )}
               </div>
             ))}
