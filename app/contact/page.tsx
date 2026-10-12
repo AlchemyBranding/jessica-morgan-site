@@ -51,7 +51,7 @@ export default function ContactPage() {
               <div className="mb-10">
                 <p className="section-label">Quickest route</p>
                 <h2 className="text-subheading font-serif font-normal text-ink mb-4">
-                  Book a clarity call
+                  Book a Clarity Call
                 </h2>
                 <p className="text-muted text-base leading-relaxed mb-6">
                   The quickest way to get started is a free 30-minute call. No pitch, no
