@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { bookingHref, bookingIsExternal } from '@/lib/booking'
 import Image from 'next/image'
 
 export default function Footer() {
@@ -9,10 +10,10 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="max-w-xs">
-            <div className="font-semibold text-ink text-base mb-1">Jessica Morgan</div>
-            <div className="text-sm text-muted mb-3">Commercial Brand &amp; Marketing Consultant</div>
+            <div className="font-serif text-ink text-lg mb-1">Jessica Morgan Consulting</div>
+            <div className="text-sm text-muted mb-3">Part of Alchemy Branding Studio</div>
             <p className="text-sm text-muted leading-relaxed mb-4">
-              Brand, marketing and commercial clarity for founder-led businesses.
+              Strategic partner to SME leadership teams.
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -22,14 +23,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 group"
                 aria-label="Alchemy Branding Studio"
               >
-                <span className="text-xs text-muted group-hover:text-ink transition-colors">Part of</span>
-                <Image
-                  src="/alchemy__master_dusk.png"
-                  alt="Alchemy Branding Studio"
-                  width={100}
-                  height={24}
-                  className="opacity-50 group-hover:opacity-80 transition-opacity invert"
-                />
+                <span className="text-xs text-muted group-hover:text-ink transition-colors underline underline-offset-4">alchemybranding.studio</span>
               </a>
               <a
                 href="https://www.iod.com/"
@@ -88,7 +82,7 @@ export default function Footer() {
           <div>
             <div className="text-xs font-medium tracking-widest uppercase text-muted mb-4">Get in Touch</div>
             <div className="flex flex-col gap-2.5">
-              <Link href="/contact" className="text-sm text-muted hover:text-ink transition-colors">
+              <Link href={bookingHref} {...(bookingIsExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="text-sm text-muted hover:text-ink transition-colors">
                 Book a Clarity Call
               </Link>
               <a
@@ -135,7 +129,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs text-muted">
-          <span>© {new Date().getFullYear()} Jessica Morgan. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Jessica Morgan Consulting, part of Alchemy Branding Studio. All rights reserved.</span>
           <span>Based in the UK. Working with businesses across the UK and internationally.</span>
         </div>
       </div>

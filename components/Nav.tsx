@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
+import { bookingHref, bookingIsExternal } from '@/lib/booking'
 import { useState, useEffect } from 'react'
 
 const links = [
@@ -28,16 +28,9 @@ export default function Nav() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <Image
-              src="/Favicon.png"
-              alt="Jessica Morgan"
-              width={512}
-              height={512}
-              className="h-8 w-8 flex-shrink-0"
-            />
             <div className="flex flex-col leading-tight">
-              <span className="font-semibold text-ink text-base tracking-tight">Jessica Morgan</span>
-              <span className="text-xs text-muted font-normal tracking-wide">Commercial Brand &amp; Marketing Consultant</span>
+              <span className="font-serif text-ink text-lg tracking-tight">Jessica Morgan Consulting</span>
+              <span className="text-xs text-muted font-normal tracking-wide">Part of Alchemy Branding Studio</span>
             </div>
           </Link>
 
@@ -64,7 +57,7 @@ export default function Nav() {
                 </Link>
               )
             )}
-            <Link href="/contact" className="btn-primary text-sm px-5 py-2.5">
+            <Link href={bookingHref} {...(bookingIsExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="btn-primary text-sm px-5 py-2.5">
               Book a Clarity Call
             </Link>
           </nav>
@@ -114,7 +107,8 @@ export default function Nav() {
               )
             )}
             <Link
-              href="/contact"
+              href={bookingHref}
+              {...(bookingIsExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               onClick={() => setOpen(false)}
               className="btn-primary text-sm w-full text-center mt-2"
             >

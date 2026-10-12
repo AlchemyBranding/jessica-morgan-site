@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import localFont from 'next/font/local'
-import { Lora } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
@@ -20,32 +19,22 @@ const satoshi = localFont({
   display: 'swap',
 })
 
-const lora = Lora({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  style: ['normal', 'italic'],
-  variable: '--font-lora',
-  display: 'swap',
-})
-
 const siteUrl = 'https://www.jessicamorganconsulting.co.uk'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
+    default: 'Jessica Morgan | Brand and Growth Strategist for SMEs',
     template: '%s | Jessica Morgan',
   },
   description:
-    'Commercial brand and marketing consultancy for founder-led businesses that need clarity, structure and senior support before hiring full-time.',
+    'Brand and growth strategy for SME leadership teams. I build the foundations your brand, sales and marketing need, then stay as you grow.',
   keywords: [
-    'commercial brand consultant',
-    'marketing consultant UK',
-    'fractional marketing director',
-    'brand strategy',
-    'founder-led business',
-    'brand and marketing clarity',
-    'fractional brand support',
+    'brand and growth strategist',
+    'brand strategy workshop',
+    'brand strategy for SMEs',
+    'sales and marketing consultant',
+    'leadership team strategy',
     'marketing foundations',
   ],
   authors: [{ name: 'Jessica Morgan' }],
@@ -56,24 +45,24 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     url: siteUrl,
-    siteName: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
-    title: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
+    siteName: 'Jessica Morgan Consulting',
+    title: 'Jessica Morgan | Brand and Growth Strategist for SMEs',
     description:
-      'Commercial brand and marketing consultancy for founder-led businesses. Clarity, structure and senior support.',
+      'Brand and growth strategy for SME leadership teams. I build the foundations your brand, sales and marketing need, then stay as you grow.',
     images: [
       {
         url: '/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Jessica Morgan — Commercial Brand & Marketing Consultant',
+        alt: 'Jessica Morgan, brand and growth strategist',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jessica Morgan | Commercial Brand & Marketing Consultant',
+    title: 'Jessica Morgan | Brand and Growth Strategist for SMEs',
     description:
-      'Commercial brand and marketing consultancy for founder-led businesses. Clarity, structure and senior support.',
+      'Brand and growth strategy for SME leadership teams. I build the foundations your brand, sales and marketing need, then stay as you grow.',
     images: ['/hero.jpg'],
   },
   verification: {
@@ -99,9 +88,9 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Jessica Morgan',
-  jobTitle: 'Commercial Brand & Marketing Consultant',
+  jobTitle: 'Brand and growth strategist',
   description:
-    'Commercial brand and marketing consultancy for founder-led businesses that need clarity, structure and senior support before hiring full-time.',
+    'Brand and growth strategy for SME leadership teams. I build the foundations your brand, sales and marketing need, then stay as you grow.',
   url: siteUrl,
   image: `${siteUrl}/jessica.jpg`,
   email: 'jessica@alchemybranding.studio',
@@ -118,10 +107,9 @@ const jsonLd = {
   },
   knowsAbout: [
     'Brand Strategy',
-    'Commercial Marketing',
-    'Fractional Marketing',
-    'Founder-led Business',
-    'Brand Consultancy',
+    'Growth Strategy',
+    'Sales and Marketing Strategy',
+    'Brand Strategy Workshops',
     'Marketing Foundations',
   ],
 }
@@ -132,7 +120,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en-GB" className={`${satoshi.variable} ${lora.variable}`}>
+    <html lang="en-GB" className={satoshi.variable}>
+      <head>
+        {/* Adobe Fonts kit (same as alchemybranding.studio): supplies p22-mackinac-pro */}
+        <link rel="stylesheet" href="https://use.typekit.net/vhr5zqe.css" />
+      </head>
       <body className="flex flex-col min-h-screen">
         <Script
           id="json-ld"

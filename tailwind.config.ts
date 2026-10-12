@@ -11,7 +11,9 @@ const config: Config = {
       colors: {
         background: '#191919',
         surface: '#242424',
-        ink: '#FAF8F7',
+        ink: '#F6F1EB',
+        // Dawn. No pure white anywhere: text-white and bg-white resolve to Dawn.
+        white: '#F6F1EB',
         muted: '#888888',
         brand: '#FE6D4C',
         navy: '#191919',
@@ -24,7 +26,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-satoshi)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-lora)', 'Georgia', 'serif'],
+        serif: ['p22-mackinac-pro', 'Georgia', 'Times New Roman', 'serif'],
       },
       fontSize: {
         'hero': ['clamp(2.25rem,5vw,3.75rem)', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
