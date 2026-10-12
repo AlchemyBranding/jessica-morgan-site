@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Book a free clarity call with Jessica Morgan. Commercial brand and marketing consultancy for founder-led businesses.',
+    'Book a free 30-minute Clarity Call with Jessica Morgan. Brand and growth strategy for SME leadership teams.',
   alternates: {
     canonical: '/contact',
   },

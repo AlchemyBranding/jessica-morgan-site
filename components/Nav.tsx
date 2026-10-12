@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { bookingHref, bookingIsExternal } from '@/lib/booking'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
@@ -37,7 +38,7 @@ export default function Nav() {
             />
             <div className="flex flex-col leading-tight">
               <span className="font-semibold text-ink text-base tracking-tight">Jessica Morgan</span>
-              <span className="text-xs text-muted font-normal tracking-wide">Commercial Brand &amp; Marketing Consultant</span>
+              <span className="text-xs text-muted font-normal tracking-wide">Brand and growth strategist</span>
             </div>
           </Link>
 
@@ -64,7 +65,7 @@ export default function Nav() {
                 </Link>
               )
             )}
-            <Link href="/contact" className="btn-primary text-sm px-5 py-2.5">
+            <Link href={bookingHref} {...(bookingIsExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="btn-primary text-sm px-5 py-2.5">
               Book a Clarity Call
             </Link>
           </nav>
@@ -114,7 +115,8 @@ export default function Nav() {
               )
             )}
             <Link
-              href="/contact"
+              href={bookingHref}
+              {...(bookingIsExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               onClick={() => setOpen(false)}
               className="btn-primary text-sm w-full text-center mt-2"
             >

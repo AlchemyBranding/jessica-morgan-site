@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { bookingHref, bookingIsExternal } from '@/lib/booking'
 import Image from 'next/image'
 
 export default function Footer() {
@@ -10,9 +11,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-xs">
             <div className="font-semibold text-ink text-base mb-1">Jessica Morgan</div>
-            <div className="text-sm text-muted mb-3">Commercial Brand &amp; Marketing Consultant</div>
+            <div className="text-sm text-muted mb-3">Brand and growth strategist</div>
             <p className="text-sm text-muted leading-relaxed mb-4">
-              Brand, marketing and commercial clarity for founder-led businesses.
+              Strategic partner to SME leadership teams.
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -88,7 +89,7 @@ export default function Footer() {
           <div>
             <div className="text-xs font-medium tracking-widest uppercase text-muted mb-4">Get in Touch</div>
             <div className="flex flex-col gap-2.5">
-              <Link href="/contact" className="text-sm text-muted hover:text-ink transition-colors">
+              <Link href={bookingHref} {...(bookingIsExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="text-sm text-muted hover:text-ink transition-colors">
                 Book a Clarity Call
               </Link>
               <a
