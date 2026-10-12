@@ -19,7 +19,7 @@ export default function ContactPage() {
         <div className="container-content">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-section font-bold text-ink mb-4">Let&apos;s talk.</h1>
+              <h1 className="text-section font-serif font-normal text-ink mb-4">Let&apos;s talk.</h1>
               <p className="text-lg text-muted leading-relaxed">
                 Book a call, send a message, or connect on LinkedIn. Whatever feels easiest,
                 I&apos;ll come back to you quickly.
@@ -50,7 +50,7 @@ export default function ContactPage() {
               {/* Book a call */}
               <div className="mb-10">
                 <p className="section-label">Quickest route</p>
-                <h2 className="text-subheading font-bold text-ink mb-4">
+                <h2 className="text-subheading font-serif font-normal text-ink mb-4">
                   Book a clarity call
                 </h2>
                 <p className="text-muted text-base leading-relaxed mb-6">
@@ -168,7 +168,7 @@ export default function ContactPage() {
             {/* Right: contact form */}
             <div>
               <p className="section-label">Send a message</p>
-              <h2 className="text-subheading font-bold text-ink mb-4">
+              <h2 className="text-subheading font-serif font-normal text-ink mb-4">
                 Prefer to write first?
               </h2>
               <p className="text-muted text-base leading-relaxed mb-8">

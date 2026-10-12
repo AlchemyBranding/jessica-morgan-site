@@ -66,7 +66,7 @@ export default function HomePage() {
               {/* On mobile: inner grid puts h1 and image side-by-side at equal height.
                   On desktop: display:contents dissolves the wrapper so h1 flows normally. */}
               <div className="grid grid-cols-[1fr_auto] items-stretch gap-4 mb-6 lg:contents">
-                <h1 className="text-hero font-bold text-ink lg:mb-6">
+                <h1 className="text-hero font-serif font-normal text-ink lg:mb-6">
                   Growth stalls without foundations.
                   <span className="block text-brand">I build them with you, and stay as you grow.</span>
                 </h1>
@@ -116,7 +116,7 @@ export default function HomePage() {
       <section className="section-padding bg-surface border-b border-border">
         <div className="container-content">
           <div className="max-w-prose mb-12">
-            <h2 className="text-section font-bold text-ink">Sound familiar?</h2>
+            <h2 className="text-section font-serif font-normal text-ink">Sound familiar?</h2>
             <p className="mt-4 text-muted text-lg">
               When marketing isn&apos;t working, it&apos;s rarely the marketing. Usually nobody
               has written down how the business is positioned, who it&apos;s for, or how it
@@ -144,13 +144,13 @@ export default function HomePage() {
       <section id="how-i-work" className="section-padding bg-background border-b border-border scroll-mt-24">
         <div className="container-content">
           <div className="max-w-prose mb-12">
-            <h2 className="text-section font-bold text-ink">How I work</h2>
+            <h2 className="text-section font-serif font-normal text-ink">How I work</h2>
             <p className="mt-4 text-muted text-lg">Every engagement starts in the same place.</p>
           </div>
 
           <ol className="grid grid-cols-1 gap-6 max-w-4xl">
             <li className="rounded-2xl bg-brand px-8 py-10">
-              <h3 className="font-bold text-white text-xl mb-4">
+              <h3 className="font-serif font-normal text-white text-xl mb-4">
                 1. The Brand &amp; Growth Workshop
               </h3>
               <p className="text-white/80 text-base leading-relaxed mb-6">
@@ -170,7 +170,7 @@ export default function HomePage() {
             </li>
 
             <li className="rounded-2xl bg-white/5 border border-white/10 px-8 py-10">
-              <h3 className="font-bold text-ink text-xl mb-4">
+              <h3 className="font-serif font-normal text-ink text-xl mb-4">
                 2. Then, if you want me alongside you: ongoing support
               </h3>
               <p className="text-muted text-base leading-relaxed mb-6">
@@ -203,7 +203,7 @@ export default function HomePage() {
             </li>
 
             <li className="rounded-2xl bg-white/5 border border-white/10 px-8 py-10">
-              <h3 className="font-bold text-ink text-xl mb-4">3. And when the work needs doing</h3>
+              <h3 className="font-serif font-normal text-ink text-xl mb-4">3. And when the work needs doing</h3>
               <p className="text-muted text-base leading-relaxed">
                 Alchemy Branding Studio, which I co-founded with Dave Morgan, builds what the
                 strategy calls for: identity, website, content, social and animation. One team,
@@ -218,7 +218,7 @@ export default function HomePage() {
       <section className="section-padding bg-surface border-b border-border">
         <div className="container-content">
           <div className="max-w-prose mb-10">
-            <h2 className="text-section font-bold text-ink">What I do</h2>
+            <h2 className="text-section font-serif font-normal text-ink">What I do</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
             <p className="text-muted text-base leading-relaxed">
@@ -262,7 +262,7 @@ export default function HomePage() {
 
             {/* Content */}
             <div className="order-1 lg:order-2">
-              <h2 className="text-section font-bold text-ink mb-6">Why work with me</h2>
+              <h2 className="text-section font-serif font-normal text-ink mb-6">Why work with me</h2>
               <p className="text-muted text-base leading-relaxed mb-5">
                 Dave and I built our first studio, Tiny Wizard, to a team of 12: animators,
                 copywriters, designers, project managers, and people in marketing and business
@@ -306,7 +306,7 @@ export default function HomePage() {
         <div className="container-content">
           <div className="max-w-prose mb-12">
             <p className="text-sm font-medium tracking-widest uppercase text-brand mb-4">What clients say</p>
-            <h2 className="text-section font-bold text-ink">Trusted by founders, leaders and growing teams.</h2>
+            <h2 className="text-section font-serif font-normal text-ink">Trusted by founders, leaders and growing teams.</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -388,7 +388,7 @@ export default function HomePage() {
       <section className="section-padding bg-background border-b border-border">
         <div className="container-content">
           <div className="max-w-prose mb-12">
-            <h2 className="text-section font-bold text-ink">Part of Alchemy</h2>
+            <h2 className="text-section font-serif font-normal text-ink">Part of Alchemy</h2>
             <p className="mt-4 text-muted text-lg">
               Jessica Morgan Consulting is part of Alchemy Branding Studio.
             </p>
@@ -446,7 +446,7 @@ export default function HomePage() {
       <section className="section-padding bg-surface border-b border-border">
         <div className="container-content">
           <div className="max-w-prose mb-10">
-            <h2 className="text-section font-bold text-ink">Common questions</h2>
+            <h2 className="text-section font-serif font-normal text-ink">Common questions</h2>
           </div>
           <div className="max-w-3xl border-t border-border">
             {faqs.map((faq) => (
@@ -459,7 +459,7 @@ export default function HomePage() {
       {/* ── FINAL CTA ────────────────────────────────────────────────── */}
       <section className="section-padding bg-brand">
         <div className="container-content text-center">
-          <h2 className="text-section font-bold text-navy mb-3 max-w-2xl mx-auto">
+          <h2 className="text-section font-serif font-normal text-navy mb-3 max-w-2xl mx-auto">
             Not sure where to start?
           </h2>
           <p className="text-navy/80 text-xl font-medium mb-8">That&apos;s exactly what the call is for.</p>

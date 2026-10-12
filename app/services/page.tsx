@@ -87,7 +87,7 @@ export default function ServicesPage() {
         <div className="container-content">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-section font-bold text-ink mb-5">How we work together</h1>
+              <h1 className="text-section font-serif font-normal text-ink mb-5">How we work together</h1>
               <p className="text-lg text-muted leading-relaxed mb-8">
                 Every business I work with starts in the same place: the Brand &amp; Growth
                 Workshop. What happens after depends on what the workshop shows, and what your team
@@ -117,7 +117,7 @@ export default function ServicesPage() {
           <div className="rounded-2xl overflow-hidden border border-border">
             <div className="bg-brand px-8 py-10">
               <p className="text-sm font-medium tracking-widest uppercase text-white/70 mb-3">Step 1</p>
-              <h2 className="text-section font-bold text-white">The Brand &amp; Growth Workshop</h2>
+              <h2 className="text-section font-serif font-normal text-white">The Brand &amp; Growth Workshop</h2>
             </div>
             <div className="bg-background px-8 py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
               <div className="space-y-8">
@@ -128,7 +128,7 @@ export default function ServicesPage() {
                   <NumberedList items={workshopFor} />
                 </div>
                 <div>
-                  <h3 className="text-ink font-semibold text-lg mb-3">
+                  <h3 className="text-ink font-serif font-normal text-lg mb-3">
                     Why start here, even if you think you know what you need
                   </h3>
                   <p className="text-muted text-base leading-relaxed mb-4">
@@ -175,7 +175,7 @@ export default function ServicesPage() {
         <div className="container-content">
           <div className="max-w-prose mb-10">
             <p className="section-label">Step 2, if you want me alongside you</p>
-            <h2 className="text-section font-bold text-ink">Ongoing support</h2>
+            <h2 className="text-section font-serif font-normal text-ink">Ongoing support</h2>
             <p className="mt-4 text-muted text-lg">
               Some businesses take the strategy and run with it. Others want help putting it to
               work. There are two levels of monthly support.
@@ -183,12 +183,12 @@ export default function ServicesPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             <div className="rounded-2xl bg-curious-blue px-8 py-10">
-              <h3 className="font-bold text-white text-2xl mb-2">Guide</h3>
+              <h3 className="font-serif font-normal text-white text-2xl mb-2">Guide</h3>
               <p className="text-white/70 text-base mb-6">For businesses with one marketer or a small team.</p>
               <NumberedList items={guide} dark />
             </div>
             <div className="rounded-2xl bg-space-green px-8 py-10">
-              <h3 className="font-bold text-white text-2xl mb-2">Partner</h3>
+              <h3 className="font-serif font-normal text-white text-2xl mb-2">Partner</h3>
               <p className="text-white/70 text-base mb-6">
                 For bigger or growing teams. More of my time, with more of your people.
               </p>
@@ -211,7 +211,7 @@ export default function ServicesPage() {
         <div className="container-content">
           <div className="max-w-prose">
             <p className="section-label">Step 3, when the work needs doing</p>
-            <h2 className="text-section font-bold text-ink mb-5">Alchemy</h2>
+            <h2 className="text-section font-serif font-normal text-ink mb-5">Alchemy</h2>
             <p className="text-muted text-lg leading-relaxed mb-6">
               Alchemy Branding Studio delivers what the strategy calls for: identity, website,
               content, social and animation. Dave runs delivery; I stay involved in the strategy.
@@ -231,7 +231,7 @@ export default function ServicesPage() {
       {/* ── FINAL CTA ────────────────────────────────────────────────── */}
       <section className="section-padding bg-brand">
         <div className="container-content text-center">
-          <h2 className="text-section font-bold text-navy mb-3 max-w-2xl mx-auto">
+          <h2 className="text-section font-serif font-normal text-navy mb-3 max-w-2xl mx-auto">
             Not sure which is right for you?
           </h2>
           <p className="text-navy/80 text-xl font-medium mb-8">

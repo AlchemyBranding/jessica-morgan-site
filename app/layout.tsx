@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import localFont from 'next/font/local'
-import { Lora } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
@@ -17,14 +16,6 @@ const satoshi = localFont({
     { path: './fonts/satoshi-900.woff2', weight: '900', style: 'normal' },
   ],
   variable: '--font-satoshi',
-  display: 'swap',
-})
-
-const lora = Lora({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  style: ['normal', 'italic'],
-  variable: '--font-lora',
   display: 'swap',
 })
 
@@ -129,7 +120,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en-GB" className={`${satoshi.variable} ${lora.variable}`}>
+    <html lang="en-GB" className={satoshi.variable}>
+      <head>
+        {/* Adobe Fonts kit (same as alchemybranding.studio): supplies p22-mackinac-pro */}
+        <link rel="stylesheet" href="https://use.typekit.net/vhr5zqe.css" />
+      </head>
       <body className="flex flex-col min-h-screen">
         <Script
           id="json-ld"

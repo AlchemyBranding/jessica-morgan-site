@@ -12,7 +12,8 @@
   }
 
   h1, h2, h3, h4 {
-    @apply font-bold;
+    @apply font-serif font-normal;
+    letter-spacing: -0.01em;
   }
 
   ::selection {
