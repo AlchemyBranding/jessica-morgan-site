@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import ContactForm from '@/components/ContactForm'
+import BookingLink from '@/components/BookingLink'
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -58,12 +59,7 @@ export default function ContactPage() {
                   preparation needed on your side. Just an honest conversation about where your
                   business is and whether working together makes sense.
                 </p>
-                <a
-                  href="mailto:jessica@alchemybranding.studio?subject=Clarity%20Call%20Request"
-                  className="btn-primary"
-                >
-                  Book a Clarity Call
-                </a>
+                <BookingLink className="btn-primary" />
                 <p className="mt-3 text-xs text-muted">Free. 30 minutes. No obligation.</p>
               </div>
 
