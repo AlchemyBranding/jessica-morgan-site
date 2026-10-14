@@ -4,18 +4,19 @@
 
 ## Stage 9: Conversion Essentials
 
-### 1. Discovery Call Booking (Calendly)
+### 1. Clarity Call booking (Opus) — done 14 Oct 2026
 
-Replace the placeholder link in two places:
-
-- `app/contact/page.tsx` — the "Book a Discovery Call" `<a href>` tag
-- Any external linking from LinkedIn or email signatures
-
-**Recommended:** Calendly (free tier works). Set up a 30-minute event type called "Discovery Call".
+Every "Book a Clarity Call" button goes to Jess's booking page in Opus, set in
+`lib/booking.ts` (override with `NEXT_PUBLIC_BOOKING_URL` in Vercel):
 
 ```
-https://calendly.com/[your-handle]/discovery-call
+https://opus.alchemybranding.studio/book/clarity-call?utm_source=website
 ```
+
+Links from outreach use their own `utm_source` (warm-list, podcast-guest,
+referral-partner, ascend, evo-ultra, networking, linkedin) so Opus records
+where the booking came from. Embedding the page in an iframe would also need
+`frame-src https://opus.alchemybranding.studio` added to the CSP in `vercel.json`.
 
 ### 2. Contact Form (Formspree)
 
